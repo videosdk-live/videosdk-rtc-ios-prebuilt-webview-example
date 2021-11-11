@@ -1,10 +1,10 @@
-# Video SDK Android Prebuilt Low Code App
+# Video SDK IOS Prebuilt Low Code App
 
 ## What is it?
 
-This code sample demonstrates a one-to-one and group video call application built with [Video SDK Low Code Prebuilt SDK](https://docs.videosdk.live/docs/guide/prebuilt-video-and-audio-calling/getting-started) with webview in Android.
+This code sample demonstrates a one-to-one and group video call application built with [Video SDK Low Code Prebuilt SDK](https://docs.videosdk.live/docs/guide/prebuilt-video-and-audio-calling/getting-started) with webview in IOS.
 
-- Built mobile first experience for Android.
+- Built mobile first experience for IOS.
 - Compeletely serverless video calling
 - Scale it upto 5,000 participants with low code.
 - 10,000 minutes free on monthly basis
