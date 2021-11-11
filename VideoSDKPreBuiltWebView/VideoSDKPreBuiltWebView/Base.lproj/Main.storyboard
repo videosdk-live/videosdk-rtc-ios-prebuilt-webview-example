@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uoV-nM-ifb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VideoSDK-->
+        <scene sceneID="WOf-ER-WEC">
+            <objects>
+                <viewController id="UMM-YS-EEN" customClass="StartViewController" customModule="VideoSDKPreBuiltWebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E9P-oq-1pI"/>
+                        <viewControllerLayoutGuide type="bottom" id="xaA-NJ-VV0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QKU-Zp-fal">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TD4-md-eI0">
+                                <rect key="frame" x="30" y="118" width="354" height="216"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="95e-d7-aWV">
+                                        <rect key="frame" x="20" y="20" width="314" height="176"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvB-Ov-GDn">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2v6-U9-01Y">
+                                                <rect key="frame" x="0.0" y="35.5" width="314" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="j9X-GK-cIF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="UMM-YS-EEN" id="eLs-v8-Yam"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Meeting ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mky-Qu-tYS">
+                                                <rect key="frame" x="0.0" y="95.5" width="314" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LfC-2f-s2K">
+                                                <rect key="frame" x="0.0" y="131" width="314" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="Qtj-zK-uPf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="UMM-YS-EEN" id="tuv-lt-Y5V"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="95e-d7-aWV" firstAttribute="top" secondItem="TD4-md-eI0" secondAttribute="top" constant="20" id="4Tq-3q-AIJ"/>
+                                    <constraint firstItem="95e-d7-aWV" firstAttribute="leading" secondItem="TD4-md-eI0" secondAttribute="leading" constant="20" id="IqZ-Tc-Xka"/>
+                                    <constraint firstAttribute="bottom" secondItem="95e-d7-aWV" secondAttribute="bottom" constant="20" id="OpX-xW-JU5"/>
+                                    <constraint firstAttribute="trailing" secondItem="95e-d7-aWV" secondAttribute="trailing" constant="20" id="fUo-Kd-3Yk"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcW-fJ-Lud">
+                                <rect key="frame" x="107" y="364" width="200" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="2wL-pB-5Hv"/>
+                                    <constraint firstAttribute="height" constant="45" id="a5O-3Q-5C5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Start Meeting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startMeetingButtonTapped:" destination="UMM-YS-EEN" eventType="touchUpInside" id="1vm-zr-aXq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zK0-kw-1fC"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TD4-md-eI0" firstAttribute="leading" secondItem="QKU-Zp-fal" secondAttribute="leading" constant="30" id="1or-2b-fCH"/>
+                            <constraint firstItem="TD4-md-eI0" firstAttribute="top" secondItem="E9P-oq-1pI" secondAttribute="bottom" constant="30" id="3JI-gn-1pq"/>
+                            <constraint firstItem="vcW-fJ-Lud" firstAttribute="centerX" secondItem="TD4-md-eI0" secondAttribute="centerX" id="CQx-yE-FWo"/>
+                            <constraint firstItem="vcW-fJ-Lud" firstAttribute="top" secondItem="TD4-md-eI0" secondAttribute="bottom" constant="30" id="ZhI-we-FZS"/>
+                            <constraint firstAttribute="trailing" secondItem="TD4-md-eI0" secondAttribute="trailing" constant="30" id="vdi-Kv-Lve"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VideoSDK" id="gef-RM-GK5"/>
+                    <connections>
+                        <outlet property="meetingIdTextField" destination="LfC-2f-s2K" id="sz2-C5-HMD"/>
+                        <outlet property="nameTextField" destination="2v6-U9-01Y" id="2e0-8G-8aq"/>
+                        <outlet property="startMeetingButton" destination="vcW-fJ-Lud" id="q1e-kY-aAY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISu-dg-EsZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.8550724637682" y="133.25892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cBi-Ad-vLb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uoV-nM-ifb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NKY-bk-FHX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UMM-YS-EEN" kind="relationship" relationship="rootViewController" id="Hwj-DY-0m6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJh-5F-yvp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.7101449275362" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
