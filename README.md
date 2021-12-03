@@ -11,8 +11,6 @@ This code sample demonstrates a one-to-one and group video call application buil
 - Inbuilt video and audio quality optimization.
 - Inbuilt chat poll, whiteboard, Q and A support.
 
-![video-sdk-mobile.jpg](./public/video-sdk-mobile.jpg)
-
 ## Features
 
 - [x] Completely Low code and serverless.
@@ -44,7 +42,7 @@ Before running app, you need to run the authentication server
 Use our official [videosdk-rtc-nodejs-sdk-example](https://github.com/videosdk-live/videosdk-rtc-nodejs-sdk-example) to perform server authentication.
 
 ```sh
-$ git clone https://github.com/videosdk-live/videosdk-rtc-nodejs-sdk-example
+git clone https://github.com/videosdk-live/videosdk-rtc-nodejs-sdk-example
 ```
 
 Add API Key and Secret in `.env` of your project.
