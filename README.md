@@ -1,5 +1,7 @@
 # Video SDK IOS Prebuilt Low Code App
 
+THIS REPO is DEPRECATED. Please refer to https://github.com/videosdk-live/videosdk-rtc-prebuilt-examples
+
 ## What is it?
 
 This code sample demonstrates a one-to-one and group video call application built with [Video SDK Low Code Prebuilt SDK](https://docs.videosdk.live/docs/guide/prebuilt-video-and-audio-calling/getting-started) with webview in IOS.
